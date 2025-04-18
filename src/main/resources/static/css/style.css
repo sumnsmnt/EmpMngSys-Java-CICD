@@ -1,0 +1,56 @@
+body {
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.custom-container {
+    width: 60%;
+    max-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.table-wrapper {
+    overflow-y: auto;
+    max-height: 45vh;
+    border-radius: 8px;
+}
+
+/* Fix the table header while scrolling */
+.fixed-header-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #343a40; /* Same as Bootstrap's table-dark */
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Optional: Smooth scroll and hover effect */
+.table-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+
+h2 {
+    color: #333;
+}
+
+.btn {
+    width: auto;
+}
+
+.table {
+    margin-top: 15px;
+}
